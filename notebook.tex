@@ -1,0 +1,57 @@
+\documentclass[a4paper]{article}
+\usepackage[left=1cm, right=1cm, top=1cm, bottom=2cm]{geometry}
+\usepackage{minted}
+\title{Dysfunctional Programmer's ICPC Notebook}
+\author{Yaseen Mowzer \and Broson Rudner}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\begingroup
+\small
+
+\section{Tricks}
+\subsection{Runtime Error Checklist}
+\begin{itemize}
+\item Did you check for \textbf{formatting errors}?
+\item Are you using \textbf{long longs}?
+\item Did you check for \textbf{stack overflow}?
+\item Does the recursive function have a \textbf{Base case}?
+\item Are you \textbf{dividing by zero}?
+  \item Is there \textbf{enough memory}?
+\end{itemize}
+\subsection{Makefile}
+\inputminted{Make}{Makefile}
+
+\subsection{Printing Floats}
+\inputminted{cpp}{abacustricks.cpp}
+
+\subsection{Python tester}
+
+\inputminted{py}{python-check.py}
+
+\section{Segment Trees}
+\subsection{Eager}
+\inputminted{cpp}{sgt-tree.cpp}
+\subsection{Lazy}
+\inputminted{cpp}{lazy-sgt-tree.cpp}
+
+\section{Numerical Integration}
+\inputminted{cpp}{numerical-integration.cpp}
+
+\section{Geometry}
+
+\inputminted{cpp}{geom.cpp}
+
+\subsection{Convex Hull}
+
+\inputminted{cpp}{convexhull.cpp}
+
+\endgroup
+
+\end{document}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
