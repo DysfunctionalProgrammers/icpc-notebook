@@ -1,9 +1,9 @@
 A list of algorithms which might be useful for the ICPC (still incomplete).
 
 - [ ] Numerical integration
-- [ ] Segment trees
+- [x] Segment trees
 - [ ] Trie
 - [ ] Topsort
 - [ ] Matrix stuff
-- [ ] Makefile
-- [ ] Geometry
+- [x] Makefile
+- [-] Geometry (Should test more)
