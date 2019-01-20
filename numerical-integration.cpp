@@ -6,6 +6,7 @@ double f(double x) {
 	return pow(M_E, -x * x); // dummy
 }
 
+// error = - (b - a)^3/(12N^2) * f''(c) for some c in [a, b].
 double integrate(double a, double b, int n) {
 	double res = 0.5 * f(a) + 0.5 * f(b);
 	for (int i = 1; i < n; ++i) {
