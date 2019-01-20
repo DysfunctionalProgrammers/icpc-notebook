@@ -15,6 +15,12 @@ double integrate(double a, double b, int n) {
 	return res * (b - a) / n;
 }
 
+// Useful for binary searches
+bool accurate_to(int decimal_places, double high, double low) {
+    double p = pow(10, decimal_places);
+    return round(high * p) == round(low * p);
+}
+
 int main() {
 	cout << fixed << setprecision(10) << integrate(-10,10,10000) << '\n';
 	cout << fixed << setprecision(10) << integrate(-10,10,1000) << '\n';
