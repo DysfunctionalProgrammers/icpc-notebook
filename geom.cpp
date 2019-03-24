@@ -62,6 +62,7 @@ template<typename T> T cross(pt<T> a, pt<T> b) {
 template<typename T> bool pt_in_rect(pt<T> p, pt<T> a, pt<T> b) {
     return betweeneither(x(a), x(p), x(b)) && betweeneither(y(a), y(p), y(b));
 }
+
 // determine if lines from a to b and c to d are parallel or collinear
 // n^2 overflow
 template <typename T> bool lines_parallel(pt<T> a, pt<T> b, pt<T> c, pt<T> d) {

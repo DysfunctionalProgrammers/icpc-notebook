@@ -7,3 +7,4 @@ A list of algorithms which might be useful for the ICPC (still incomplete).
 - [ ] Matrix stuff
 - [x] Makefile
 - [-] Geometry (Should test more)
+- [-] Max flow (psuedo code)

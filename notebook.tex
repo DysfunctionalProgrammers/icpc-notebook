@@ -1,15 +1,30 @@
 \documentclass[a4paper]{article}
-\usepackage[left=1cm, right=1cm, top=1cm, bottom=2cm]{geometry}
+\usepackage[a4paper, left=1cm, right=1cm, top=2cm, bottom=0.5cm]{geometry}
+\usepackage[utf8]{inputenc}
 \usepackage{minted}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhead[L]{University of Cape Town / Dysfunctional Programmers}
+\fancyhead[R]{\thepage}
+\fancyfoot{}
+\setlength{\headsep}{6pt}
+\setlength{\headsep}{6pt}
+%\fancyfoot[L]{From: K. Grant}\fancyfoot[C]{To: Dean A. Smith}
+%\fancyfoot[R]{\thepage}
+%\renewcommand{\headrulewidth}{0.4pt}
+% \renewcommand{\footrulewidth}{0.4pt}
+
 \title{Dysfunctional Programmer's ICPC Notebook}
-\author{Yaseen Mowzer \and Broson Rudner}
+\author{Yaseen Mowzer \and Broson Rudner \and David Broodryk}
+
+% Max 25 Pages
+
+
 \begin{document}
 
 \maketitle
 \tableofcontents
-
-\begingroup
-\small
 
 \section{Tricks}
 \subsection{Runtime Error Checklist}
@@ -40,6 +55,17 @@
 \section{Numerical Integration}
 \inputminted{cpp}{numerical-integration.cpp}
 
+\subsection{Simsons}
+
+
+\[
+\int_a^bP(x)\,dx =\frac{b-a}{6} \left[f(a) + 4 f \left( \frac{a + b}{2} \right) + f ( b )
+  \right]
+-\frac{1}{90}\left(\frac{b - a}{2}\right)^5f^{(4)}(\xi)\]
+
+Composite error: $-(h^4/180)(b - a)f^{(4)}(\xi)$
+
+
 \section{Geometry}
 
 \inputminted{cpp}{geom.cpp}
@@ -48,7 +74,11 @@
 
 \inputminted{cpp}{convexhull.cpp}
 
-\endgroup
+\section{Max-Flow}
+
+\inputminted{text}{maxflow.txt}
+
+\inputminted{cpp}{maxflow.cpp}
 
 \end{document}
 %%% Local Variables:
